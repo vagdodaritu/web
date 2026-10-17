@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 4 - JavaScript Interactivity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <button id="menuBtn">☰ Menu</button>
+        <div id="menu">
+            <a href="#home">Home</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <button id="themeBtn">Change Theme</button>
+    </nav>
+
+    <div id="notice">
+        Welcome to Practical 4!
+        <button id="closeNotice">X</button>
+    </div>
+
+    <main id="home">
+        <h1>JavaScript DOM Manipulation</h1>
+        <p>Explore interactive webpage features.</p>
+
+        <h2>Content Slider</h2>
+        <p id="slide">Welcome to our website!</p>
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <button class="question">What is JavaScript?</button>
+        <p class="answer">JavaScript makes webpages interactive.</p>
+
+        <button class="question">What is the DOM?</button>
+        <p class="answer">DOM represents the webpage as objects.</p>
+
+        <h2>Modal Popup</h2>
+        <button id="openModal">Open Popup</button>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modalContent">
+            <button id="closeModal">X</button>
+            <h2>Hello!</h2>
+            <p>This is a JavaScript modal popup.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
