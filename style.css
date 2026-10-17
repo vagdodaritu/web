@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f2f6fc;
+}
+
+/* Header */
+header {
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 15px;
+}
+
+/* Navigation using Flexbox */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    margin: 15px 0 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background-color: #2878b5;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+h2 {
+    color: #123c69;
+}
+
+section,
+article,
+aside,
+form,
+fieldset {
+    background-color: white;
+    padding: 18px;
+    margin: 18px 0;
+    border: 1px solid #d8e1ec;
+    border-radius: 8px;
+}
+
+article {
+    border-left: 5px solid #2878b5;
+}
+
+aside {
+    background-color: #e8f2fc;
+}
+
+/* Links */
+a {
+    color: #1769aa;
+}
+
+a:hover {
+    color: #0b3d70;
+}
+
+/* Forms */
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aab7c4;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+button {
+    background-color: #1769aa;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 4px 4px 4px 0;
+    font: inherit;
+}
+
+button:hover {
+    background-color: #0b3d70;
+}
+
+fieldset {
+    margin: 15px 0;
+}
+
+legend {
+    color: #123c69;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: white;
+}
+
+caption {
+    font-weight: bold;
+    padding: 8px;
+}
+
+th,
+td {
+    border: 1px solid #cbd5df;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #dceafa;
+}
+
+/* FAQ */
+details {
+    background-color: white;
+    border: 1px solid #d8e1ec;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+summary {
+    color: #123c69;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Profile details */
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Keyboard focus */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+summary:focus {
+    outline: 2px solid #f0a500;
+    outline-offset: 2px;
+}
+
+/* Skip link */
+body > a:first-child {
+    display: inline-block;
+    margin: 8px;
+}
+
+/* Tablet and mobile screens */
+@media (max-width: 768px) {
+    main {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    section,
+    article,
+    aside,
+    form,
+    fieldset {
+        padding: 14px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
